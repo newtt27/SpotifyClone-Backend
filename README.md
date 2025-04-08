@@ -18,8 +18,8 @@
 
 ## 3.Cấu hình lại database:
 
-    Cấu hình lại database trong file settings.py của spotify_clone_backend
-    Database dùng PostgreSQL
+- Cấu hình lại database trong file settings.py của spotify_clone_backend
+- Database dùng PostgreSQL
 
 ## 4.Runserver:
 
