@@ -21,7 +21,17 @@
 - Cấu hình lại database trong file settings.py của spotify_clone_backend
 - Database dùng PostgreSQL
 
-## 4.Runserver:
+## 4.Migrate
+
+### 4.1 Tạo migrations từ các Model dưới dạngPythoncode:
+
+    python manage.py makemigrations
+
+### 4.2 Thực hiện các migration đó trên database thật:
+
+    python manage.py migrate
+
+## 5.Runserver:
 
     python manage.py runserver
 
