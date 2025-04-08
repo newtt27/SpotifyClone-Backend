@@ -9,15 +9,18 @@ python -m venv myvenv
     1.2Chạy môi trường ảo
     myvenv\Scripts\activate
 
-2.Cài đặt các thư viện cần thiết cho project trong file requirements
-pip install requirements.txt
+2.Cài đặt các thư viện cần thiết cho project trong file requirements:
 
-3.Cấu hình lại database
--Cấu hình lại database trong file settings.py của spotify_clone_backend
--Database dùng PostgreSQL
+- pip install -r requirements.txt
 
-4.Runserver
-python manage.py runserver
+  3.Cấu hình lại database:
+
+- Cấu hình lại database trong file settings.py của spotify_clone_backend
+- Database dùng PostgreSQL
+
+  4.Runserver:
+
+- python manage.py runserver
 
 Ngoài lề:
 
