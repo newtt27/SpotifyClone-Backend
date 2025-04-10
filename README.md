@@ -56,7 +56,16 @@ DATABASES = {
 
     python manage.py runserver
 
-## Ngoài lề:
+## Một số lệnh Django hữu ích:
 
-- Muốn tạo project Django: django-admin startproject 'project-name' . (Thêm dấu '.' đế tạo project trực tiép)
-- Tạo các apps: python manage.py startapp 'app-name'
+- Tạo project Django:
+
+```bash
+django-admin startproject 'project-name' .
+```
+
+- Tạo một app:
+
+```bash
+python manage.py startapp 'app-name'
+```
