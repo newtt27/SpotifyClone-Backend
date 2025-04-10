@@ -1,27 +1,44 @@
-# SpotifyClone-Backend
+# SpotifyClone-Backend 🎵
 
-## 1.Tạo môi trường ảo
+Backend của dự án Spotify Clone – xây dựng bằng Django và PostgreSQL.
 
-    python -m venv myvenv
+## ✅ 1. Tạo môi trường ảo
 
-### 1.1Sau đó chạy lệnh sau để mở quyền chạy Scripts trên PowerShell
+```bash
+python -m venv myvenv
+```
+
+### 1.1 Mở quyền chạy Scripts trên PowerShell (Windows)
 
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-### 1.2Chạy môi trường ảo
+### 1.2 Kích hoạt môi trường ảo
 
     myvenv\Scripts\activate
 
-## 2.Cài đặt các thư viện cần thiết cho project trong file requirements:
+## ✅ 2.Cài đặt các thư viện cần thiết
 
     pip install -r requirements.txt
 
-## 3.Cấu hình lại database:
+## ✅ 3.Cấu hình lại database:
 
 - Cấu hình lại database trong file settings.py của spotify_clone_backend
 - Database dùng PostgreSQL
 
-## 4.Migrate
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'spotify_db',
+        'USER': 'postgres',
+        'PASSWORD': 'yourpassword',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+```
+
+## ✅ 4. Migrate
 
 ### 4.1 Tạo migrations từ các Model dưới dạngPythoncode:
 
@@ -31,13 +48,11 @@
 
     python manage.py migrate
 
-### Muốn đăng nhập được site admin:
-
-#### Tạo Super user trước:
+## ✅ 5. Tạo tài khoản quản trị (superuser)
 
     python manage.py createsuperuser
 
-## 5.Runserver:
+## ✅ 6. Chạy server:
 
     python manage.py runserver
 
