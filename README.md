@@ -31,6 +31,12 @@
 
     python manage.py migrate
 
+### Muốn đăng nhập được site admin:
+
+#### Tạo Super user trước:
+
+    python manage.py createsuperuser
+
 ## 5.Runserver:
 
     python manage.py runserver
