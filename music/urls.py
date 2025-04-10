@@ -1,7 +1,11 @@
 from django.urls import path
-from . import views
+from .views.song_views import SongListView
+from .views.artist_views import ArtistListViews
+from .views.album_views import AlbumListView
 
 #Cấu hình URL cho ứng dụng music
 urlpatterns = [
-    path('', views.get_music),
+    path('songs/', SongListView.as_view(), name='song-list'),
+    path('artists/', ArtistListViews.as_view(), name='artist-list'),
+    path('albums/', AlbumListView.as_view(), name='album-list'),
 ]
