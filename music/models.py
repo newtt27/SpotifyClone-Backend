@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.db import models
+from django.utils.text import slugify               #slug
 
 User = get_user_model()
 
@@ -29,6 +30,13 @@ class Song(models.Model):
     video_file = models.FileField(upload_to='videos/', blank=True, null=True)
     uploaded_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     uploaded_at = models.DateTimeField(auto_now_add=True)
+    #slug - phat nhac
+    slug = models.SlugField(unique=True, blank=True) # cho phép để trống, sẽ tự sinh
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title) # sinh slug tự động từ title
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title

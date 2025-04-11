@@ -91,7 +91,7 @@ DATABASES = {
         'NAME': 'spotify_clone',  # Thay thế bằng tên cơ sở dữ liệu PostgreSQL
         'USER': 'postgres',       # Tên người dùng PostgreSQL
         'PASSWORD': '123',   # Mật khẩu người dùng PostgreSQL
-        'HOST': 'localhost',           # Địa chỉ máy chủ (localhost nếu bạn đang chạy trên máy tính của mình)
+        'HOST': '127.0.0.1',           # Địa chỉ máy chủ (localhost nếu bạn đang chạy trên máy tính của mình)
         'PORT': '5432',                # Cổng mặc định của PostgreSQL
     }
 }

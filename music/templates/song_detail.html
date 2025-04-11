@@ -1,0 +1,18 @@
+<h1>{{ object.title }}</h1>
+
+{% if object.audio_file %}
+    <audio controls>
+        <source src="{{ object.audio_file.url }}" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
+{% else %}
+    <p>Không có file nhạc để phát.</p>
+{% endif %}
+
+{% if object.video_file %}
+    <h3>Video:</h3>
+    <video width="640" height="360" controls>
+        <source src="{{ object.video_file.url }}" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+{% endif %}
