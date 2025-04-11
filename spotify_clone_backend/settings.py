@@ -65,7 +65,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        'APP_DIRS': True,
+        'APP_DIRS': True,  #  tìm kiếm trong templates của các app
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
