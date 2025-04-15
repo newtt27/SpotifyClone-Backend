@@ -14,8 +14,4 @@ class SongListView(APIView):
 
 
 
-# class SongDetailView(DetailView):
-#     model = Song
-#     template_name = 'song_detail.html'  # Đặt template này theo tên bạn đang dùng
-#     slug_field = 'slug'
-#     slug_url_kwarg = 'slug'
+
